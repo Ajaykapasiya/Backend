@@ -12,7 +12,7 @@ app.get("/about-page" , (req,res) => {
     res.send("Hello about page")
 })
 
-const PORT = 3001;
+const PORT = process.env.PORT;
 
 app.listen(PORT , ()=>{
     console.log(`Port is activated on ${PORT}`);
